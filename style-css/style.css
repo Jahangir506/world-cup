@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header option start */
+.container{
+  background-color: #161616;
+  width: 1331px;
+  height: 646px;
+  margin: 50px auto;
+  border-radius: 30px;
+}
+.top-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-text{
+  width: 531px;
+  height: 424px;
+  color: white;
+  margin: 111px 0 111px 106px;
+}
+.banner-img img{
+  width: 581px;
+  height: 613px;
+  background-size: cover;
+  margin: 33px 79px 0 24px;
+}
+/* header option end */
