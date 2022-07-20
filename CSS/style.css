@@ -120,5 +120,42 @@ header{
   width: 26px;
   height: 26px;
 }
+.side-menu{
+  background-color: #161616;
+  width: 312px;
+  height: 312px;
+  border-radius: 10px;
+}
+.menu{
+  margin: 30px;
+}
+.menu-button{
+  width: 252px;
+  height: 64px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
 
+}
+.menu-button-3{
+  width: 252px;
+  height: 64px;
+  border: none;
+  border-radius: 10px;
+  background-color: #DD0000;
+  
+}
+.blog-column{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 3fr)
+}
+.blog{
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
 /* blog end */
+
+
+/* footer */
+header
+/* footer */
