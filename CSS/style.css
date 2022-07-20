@@ -203,3 +203,27 @@ hr{
   margin-right: -5px;
 }
 /* footer */
+
+
+/*responsive mobile device */
+@media screen and (max-width: 576px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+  }
+  body{
+    margin: 8px;
+  }
+  header{
+  background-color: #161616;
+  width: 334px;
+  height: 472px;
+  margin: 50px auto;
+  border-radius: 30px;
+}
+.blog-column{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr)
+}
+}
