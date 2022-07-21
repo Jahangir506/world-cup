@@ -10,59 +10,54 @@
 }
 /* header option start */
 header{
-  background-color: #161616;
   width: 1321px;
   height: 646px;
-  margin: 50px auto;
+  background-color: #161616;
   border-radius: 30px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .top-banner{
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.banner-title{
-  font-family: 'Poppins', sans-serif;
-  font-size: 4.375em;
-  line-height: 80px;
-}
-.banner-text p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 15px;
 }
 .banner-text{
-  /* width: 531px;
-  height: 424px; */
+  width: 50%;
   color: white;
-  margin: 111px 0 111px 106px;
+  margin: 111px 12px 111px 106px;
 }
-.banner-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #DD0000;
-  width: 187px;
-  height: 56px;
-  border-radius: 5px;
-  padding: 16px, 25px, 16px, 25px;
-  margin-top: 25px;
-}
-.banner-button a{
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-.fa-angle-right{
-  padding: 17px 25px 16px 20px;
+.banner-img{
+  width: 50%;
+  margin: 33px 79px 0 12px;
 }
 .banner-img img{
-  width: 581px;
-  height: 613;
-  /* height: 613px; */
-  background-size: cover;
-  margin: 33px 79px 0 24px;
+  width: 100%;
+  margin-bottom: -32px;
+}
+.banner-title{
+  font-size: 4.6em;
+  line-height: 70px;
+}
+.banner-ellipsis{
+  margin-top: 20px;
+}
+.banner-button{
+  text-align: center;
+  margin-top: 30px;
+  width: 167px;
+  height: 56px;
+  background-color: #DD0000;
+  padding: 16px 25px;
+  border-radius: 5px;
+}
+.banner-button a{
+  text-decoration: none;
+  color: white;
+}
+.fa-angle-right{
+  margin: 5px 16px 16px 10px;
 }
 /* header option end */
 
@@ -239,29 +234,36 @@ hr{
     height: 100%;
     margin-bottom: 0px;
   }
+  .banner-text{
+    align-items: center;
+  }
+  .banner-title{
+    font-size: 1.4em;
+    line-height: 42px;
+  }
+  .banner-img{
+    width: 100%;
+  }
   .banner-img img{
-    width: 80%;
-    margin: 0;
+    width: 100%;
+    margin: 30px 30px 0px 30px;
+  }
+  .banner-text{
+    margin: 28px 38px 21px 100px;
   }
    .top-banner{
     display: grid;
     flex-direction: column;
     text-align: center;
   }
-  .banner-text{
-    margin: 28px 0;
-  }
-  .banner-title{
-    font-size: 2.6em;
-    line-height: 60px;
-  }
-  .banner-button{
-    margin: 21px 110px 0 110px;
-  }
+
   .banner-ellipsis{
-    width: 300px;
+    width: 200px;
+    height: 48px;
+    /* border: 1px solid white; */
     overflow: hidden;
-    margin: 0 60px;
+    text-align: center;
+    padding: 15px 30px 15px 15px;
   }
   .ellipsis{
    white-space: nowrap;
