@@ -128,6 +128,16 @@ header{
 .menu{
   margin: 30px;
 }
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover{
+  background-color: #DD0000;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+}
 .menu-button-1{
   width: 252px;
   min-height: 64px;
@@ -159,6 +169,25 @@ header{
 .blog{
   margin-left: 24px;
   margin-bottom: 24px;
+}
+.tablet-button{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.t-button{
+  width: 131px;
+  height: 47px;
+  background-color: #DD0000;
+  text-align: center;
+  padding: 12px 29px;
+  border-radius: 5px;
+  
+}
+.t-button a{
+  color: white;
+  text-decoration: none;
+ 
 }
 /* blog end */
 
@@ -428,5 +457,24 @@ font-size: 1.5em;
       display: none;
 
     }
+    .tablet-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t-button{
+  width: 131px;
+  height: 47px;
+  background-color: #DD0000;
+  text-align: center;
+  padding: 12px 29px;
+  border-radius: 5px;
+  
+}
+.t-button a{
+  color: white;
+  text-decoration: none;
+ 
+}
 }
 /* responsive tablate device start */
