@@ -234,8 +234,8 @@ body{
 
 /* footer start*/
 footer{
-  width: 100vw;
-  height: 50vh;
+  width: 834px;
+  height: 345px;
   background-color: #161616;
   display: flex;
   justify-content: center;
@@ -595,6 +595,5 @@ font-size: 1.5em;
   font-size: 1em;
  
 }
-
 }
 /* responsive tablate device end */
