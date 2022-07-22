@@ -271,6 +271,9 @@ hr{
     width: 100%;
     margin: 30px 30px 0px 0px;
   }
+  .banner-button a{
+    font-size: 0.9em;
+  }
    .top-banner{
     display: grid;
     flex-direction: column;
