@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -6,9 +7,6 @@
 }
 ::-webkit-scrollbar{
   display: none;
-}
-body{
-  font-family: 'Poppins', sans-serif;
 }
 /* header option start */
 header{
@@ -57,7 +55,6 @@ header{
 .banner-button a{
   text-decoration: none;
   color: white;
-  font-size: 14px;
 }
 .fa-angle-right{
   margin: 5px 16px 16px 10px;
@@ -69,58 +66,59 @@ header{
 .container{
   width: 1331px;
   min-height: 646px;
-  margin: 50px auto;
-  margin-top: 130px;
+  margin: 120px auto 0px auto;
+}
+.blog-column{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 3fr);
+  gap: 24px;
+  margin-bottom: 24px;
 }
 .blog{
   width: 312px;
-  height: 362px;
+  height: 242px;
   border: 1px solid #E8E8E8;
   border-radius: 10px;
-
 }
-.blog-images img{
-  width: 312px;
-  height: 175px;
-
+.upcoming-match{
+  margin: 53px 30px 53px 30px;
 }
-.blog h4{
-  width: 100px;
-  height: 32px;
-  border: 1px solid #161616;
+.match-flag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flag-1{
+  margin: 0 10px;
+}
+.flag-2{
+  margin: 0 10px;
+}
+.match-info{
   text-align: center;
+  margin-top: -20px;
+}
+.match-info h4{
+  margin-bottom: 10px;
+}
+.tablet-button{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.t-button{
+  width: 131px;
+  height: 47px;
+  background-color: #DD0000;
+  text-align: center;
+  padding: 12px 29px;
   border-radius: 5px;
-  line-height: 24px;
-  margin: 20px 192px 15px 20px;
-  padding: 2px;
+  
 }
-.blog p{
-  margin: 0 20px;
-}
-.blog-icon{
-  margin: 20px 149px 20px 20px;
-  display: flex;
-
-}
-.blog-icon img{
-  width: 24px;
-  height: 24px;
-}
-.icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.icon{
-  margin-left: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.icon-space{
-  margin-left: 10px;
-  width: 26px;
-  height: 26px;
+.t-button a{
+  color: white;
+  text-decoration: none;
+ 
 }
 .side-menu{
   background-color: #161616;
@@ -131,37 +129,55 @@ header{
 .menu{
   margin: 30px;
 }
-.menu-button-1{
-  width: 252px;
-  min-height: 64px;
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover{
   background-color: #DD0000;
-
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
 }
-.menu-button-2{
+.menu-button-1 a{
+   width: 252px;
+  height: 64px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  background-color: #DD0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button-2 a{
   width: 252px;
   height: 64px;
   border: none;
   border-radius: 10px;
   margin-bottom: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-.menu-button-3{
-  width: 252px;
+.menu-button-3 a{
+    width: 252px;
   height: 64px;
   border: none;
   border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
-.blog-column{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr 3fr);
-}
-.blog{
-  margin-left: 24px;
-  margin-bottom: 24px;
+.menu-button-3 a{
+  color: black;
+  text-decoration: none;
 }
 /* blog end */
 
@@ -210,10 +226,10 @@ hr{
   margin-right: -5px;
 }
 .fa-linkedin, .fa-facebook{
-  color: rgb(10 102 194);
+  color: white;
 }
 .fa-youtube{
-  color: rgb(255 0 0);
+  color: white;
 }
 /* footer */
 
@@ -241,7 +257,7 @@ hr{
     align-items: center;
   }
   .banner-title{
-    font-size: 1.4em;
+    font-size: 2.2em;
     line-height: 42px;
   }
   .banner-img{
@@ -249,23 +265,28 @@ hr{
   }
   .banner-img img{
     width: 100%;
-    margin: 30px 30px 0px 30px;
-  }
-  .banner-text{
-    margin: 28px 38px 21px 100px;
+    margin: 30px 30px 0px 0px;
   }
    .top-banner{
     display: grid;
     flex-direction: column;
     text-align: center;
   }
+  .banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 22%;
+
+  }
 
   .banner-ellipsis{
-    width: 200px;
+    width: 250px;
     height: 48px;
     overflow: hidden;
     text-align: center;
-    padding: 15px 30px 15px 15px;
+    padding: 15px 10px 15px 15px;
   }
   .ellipsis{
    white-space: nowrap;
@@ -309,31 +330,52 @@ hr{
       justify-content: center;
       justify-items: center;
       align-items: center;
-      margin-top: -124px;
+      margin-top: -120px;
     }
-  .menu-button-1{
-    width: 210px;
-    min-height: 48px;
-    border: 1px solid;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    .menu-button-1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-button-1 a{
+      width: 210px;
+      height: 48px;
+      border: 1px solid;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4em;
     }
     .menu-button-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-button-2 a{
       width: 160px;
       height: 48px;
       border: 1px solid;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      margin-left: 25px;
-
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4em;
     }
-    .menu-button-3{
+      .menu-button-3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-button-3 a{
       width: 160px;
       height: 48px;
-      border: none;
-      border-radius: 10px;
-      background-color: #DD0000;
-      margin-left: 25px;
+      border: 1px solid;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4em;
     }
     /*--------------
       blog end
@@ -388,16 +430,18 @@ font-size: 1.5em;
   justify-content: center;
   align-items: center;
 }
+.container{
+  width: 100%;
+  width: 100%;
+}
 .banner-text{
   width: 50%;
 }
 .banner-img{
-  width: 50%;
+  width: 75%;
   margin: 33px 79px 0 12px;
 }
 .banner-img img{
-  background-image: no-repeat;
-  background-size: cover;
   width: 100%;
   margin-bottom: -32px;
 }
@@ -405,12 +449,96 @@ font-size: 1.5em;
   font-size: 2.6em;
   line-height: 50px;
 }
-  .blog-column{
-    display: grid;
-    grid-template-columns: repeat(2, fr);
-  }
-  .side-menu{
-    
-  }
+    .blog-column{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    }
+    .blog-column-2{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .blog-images{
+      width: 100%;
+    }
+    .blog{
+      margin-left: 0px;
+    }
+    .side-menu{
+      background-color: white;
+    }
+    .menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.4em;
+    }
+    .menu-button-1 a{
+  width: 230px;
+  height: 64px;
+  margin: 0px 22px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #DD0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button-2 a{
+  width: 230px;
+  height: 64px;
+  margin: 0px 22px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.menu-button-3 a{
+  width: 230px;
+  height: 64px;
+  margin: 0px 22px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+    .tablet-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+}
+.t-button{
+  width: 131px;
+  height: 47px;
+  background-color: #DD0000;
+  text-align: center;
+  padding: 12px 29px;
+  border-radius: 5px;
+  
+}
+.t-button a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+ 
+}
+.footer-menu{
+ width: 100%;
+ height: 100%;
+}
 }
 /* responsive tablate device start */

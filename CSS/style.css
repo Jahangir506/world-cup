@@ -66,8 +66,7 @@ header{
 .container{
   width: 1331px;
   min-height: 646px;
-  margin: 50px auto;
-  margin-top: 130px;
+   margin: 120px auto 100px auto;
 }
 .blog{
   width: 312px;
@@ -134,32 +133,44 @@ header{
 }
 .menu a:hover{
   background-color: #DD0000;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   padding: 10px;
 }
-.menu-button-1{
+.menu-button-1 a{
   width: 252px;
   min-height: 64px;
   border: none;
   border-radius: 10px;
   margin-bottom: 30px;
-
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.menu-button-2{
+.menu-button-2 a{
   width: 252px;
   height: 64px;
   border: none;
   border-radius: 10px;
   margin-bottom: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-.menu-button-3{
+.menu-button-3 a{
   width: 252px;
   height: 64px;
   border: none;
   border-radius: 10px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
   background-color: #DD0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .blog-column{
@@ -169,6 +180,9 @@ header{
 .blog{
   margin-left: 24px;
   margin-bottom: 24px;
+}
+.blog h4:hover{
+  background-color: gainsboro;
 }
 .tablet-button{
   display: none;
@@ -236,10 +250,10 @@ hr{
   margin-right: -5px;
 }
 .fa-linkedin, .fa-facebook{
-  color: rgb(10 102 194);
+  color: white;
 }
 .fa-youtube{
-  color: rgb(255 0 0);
+  color: white;
 }
 /* footer */
 
@@ -267,7 +281,7 @@ hr{
     align-items: center;
   }
   .banner-title{
-    font-size: 1.4em;
+    font-size: 2.2em;
     line-height: 42px;
   }
   .banner-img{
@@ -277,17 +291,21 @@ hr{
     width: 100%;
     margin: 30px 30px 0px 30px;
   }
-  .banner-text{
-    /* margin: 28px 38px 21px 100px; */
-  }
    .top-banner{
     display: grid;
     flex-direction: column;
     text-align: center;
   }
+  .banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 22%;
 
+  }
   .banner-ellipsis{
-    width: 200px;
+    width: 250px;
     height: 48px;
     overflow: hidden;
     text-align: center;
@@ -335,31 +353,52 @@ hr{
       justify-content: center;
       justify-items: center;
       align-items: center;
-      margin-top: -124px;
+      margin-top: -120px;
     }
-  .menu-button-1{
-    width: 210px;
-    min-height: 48px;
-    border: 1px solid;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    .menu-button-1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-button-1 a{
+      width: 210px;
+      height: 48px;
+      border: 1px solid;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4em;
     }
     .menu-button-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-button-2 a{
       width: 160px;
       height: 48px;
       border: 1px solid;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      margin-left: 25px;
-
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4em;
     }
-    .menu-button-3{
+      .menu-button-3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-button-3 a{
       width: 160px;
       height: 48px;
-      border: none;
-      border-radius: 10px;
-      background-color: #DD0000;
-      margin-left: 25px;
+      border: 1px solid;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4em;
     }
     /*--------------
       blog end
@@ -414,11 +453,15 @@ font-size: 1.5em;
   justify-content: center;
   align-items: center;
 }
+.container{
+  width: 100%;
+  height: 100%;
+}
 .banner-text{
   width: 50%;
 }
 .banner-img{
-  width: 50%;
+  width: 80%;
   margin: 33px 79px 0 12px;
 }
 .banner-img img{
@@ -426,6 +469,8 @@ font-size: 1.5em;
   background-size: cover;
   width: 100%;
   margin-bottom: -32px;
+  position: static;
+  
 }
 .banner-title{
   font-size: 2.6em;
@@ -436,15 +481,21 @@ font-size: 1.5em;
       height: 100%;
     }
     .blog-column{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      /* justify-content: center;
+      display: flex;
+      justify-content: center;
       align-items: center;
-      justify-items: center; */
+      flex-direction: column;
 
     }
     .blog-column-2{
-      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .tablet{
+      display: none;
     }
     .blog-images{
       width: 100%;
@@ -454,13 +505,55 @@ font-size: 1.5em;
     }
     .side-menu{
       background-color: white;
-      display: none;
-
     }
+    .menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.4em;
+    }
+.menu-button-1 a{
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  width: 230px;
+  height: 64px;
+  margin: 0px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button-2 a{
+  width: 230px;
+  height: 64px;
+  margin: 0px 22px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.menu-button-3 a{
+  width: 230px;
+  height: 64px;
+  margin: 0px 22px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #DD0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
     .tablet-button{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 .t-button{
   width: 131px;
@@ -474,7 +567,12 @@ font-size: 1.5em;
 .t-button a{
   color: white;
   text-decoration: none;
+  font-size: 1.2em;
  
 }
+.footer-menu{
+ width: 100%;
+ height: 100%;
 }
-/* responsive tablate device start */
+}
+/* responsive tablate device end */
