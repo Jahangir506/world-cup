@@ -33,10 +33,11 @@ body{
 }
 .banner-img{
   width: 50%;
-  margin: 33px 79px 0 12px;
+  margin: 69px 79px 0 12px;
 }
 .banner-img img{
-  width: 93%;
+  width: 100%;
+  height: 100%;
 }
 .banner-title{
   font-size: 4.5em;
@@ -46,21 +47,43 @@ body{
   margin-top: 20px;
 }
 .banner-button{
-  text-align: center;
   margin-top: 30px;
-  width: 167px;
-  height: 56px;
   background-color: #DD0000;
   padding: 16px 25px;
+  width: 167px;
+  height: 56px;
   border-radius: 5px;
-  font-size: 0.9em;
 }
 .banner-button a{
+  font-size: 0.7em;
   text-decoration: none;
   color: white;
 }
 .fa-angle-right{
   margin: 5px 16px 16px 10px;
+}
+
+.fa-angle-right{
+  margin-left: 20px;
+  animation: pointer 1.5s ease-in-out infinite;
+}
+.fa-angle-right{
+  transform: translate((-50%, -50%));
+}
+.animation-1:hover {
+  color: black;
+  border-radius: 5px;
+  padding: 10px 0px;
+  transition: 0.3s;
+}
+@keyframes pointer {
+  0%,100%{
+    margin-left: 30px;
+  }
+  50%{
+    margin-left: 10px;
+  }
+  
 }
 /* header option end */
 
@@ -290,10 +313,10 @@ hr{
   }
   .banner-img{
     width: 100%;
+    margin: 8px 79px 0 12px;
   }
   .banner-img img{
     width: 100%;
-    margin: 30px 30px 0px 30px;
   }
    .top-banner{
     display: grid;
@@ -309,7 +332,7 @@ hr{
 
   }
   .banner-button a{
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
   .banner-ellipsis{
     width: 250px;
@@ -452,7 +475,7 @@ font-size: 1.5em;
   }
  header{
   width: 768px;
-    height: 398px;
+    height: 450px;
     border-radius: 0px;
     margin: 0px auto 0px auto;
 }
@@ -468,15 +491,11 @@ font-size: 1.5em;
 }
 .banner-img{
   width: 50%;
-  margin: 33px 79px 0 12px;
+  margin: 80px 79px 0 12px;
 }
 .banner-img img{
-  /* background-image: no-repeat; */
-  /* background-size: cover; */
   width: 100%;
   margin-bottom: -32px;
-  position: static;
-  
 }
 .banner-title{
   font-size: 2em;
